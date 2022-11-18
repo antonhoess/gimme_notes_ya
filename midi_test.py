@@ -16,6 +16,8 @@ import signal
 
 from midi import Midi, MidiDeviceType, MidiEvent
 
+signal.signal(signal.SIGINT, signal.SIG_DFL)
+
 
 class MidiTestBase:
     _notes = ["c", "c#", "d", "d#", "e", "f", "f#", "g", "g#", "a", "a#", "h"]
